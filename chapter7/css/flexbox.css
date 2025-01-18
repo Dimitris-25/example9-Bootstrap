@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    /* flex-flow: row wrap; */
+    /* flex-flow: column wrap; */
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    height: 10vh;
+}
+
+.border-dark {
+    border: 1px solid red;
+}
+
+.flex-item-1 {
+    flex: 0 0 100px;
+    /* Since flex grow is 0 and flex shrink is 0 then 100px functions as fixed width */
+}
+
+.flex-item-2 {
+    flex: 1 0 500px;
+    /* since flex-grow is 1, then flex basis functions as minimum width. If there is available space item-2 will grow. */
+}
+
+.flex-item-3 {
+    flex: 0 1 1000px;
+    /*default is not wrap*/
+}
